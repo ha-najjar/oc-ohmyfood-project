@@ -1,0 +1,15 @@
+{
+  "name": "ohmyfood-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass assets/styles/sass/main.scss assets/styles/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

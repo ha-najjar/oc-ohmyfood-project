@@ -1,0 +1,28 @@
+@use "../variable.scss" as v;
+.footer{
+    background-color: v.$grey-color;
+    padding: 22px 25px;
+    &.page-footer {
+        margin-top: -13px;
+    }
+
+    &__logo {
+        font-weight: 400;
+        font-size: 18px;
+        color: v.$white-color;
+        font-family: v.$secondary-font-family, sans-serif;
+        font-style: italic;
+        margin-bottom: 14px;
+    }
+    &__menu {
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+        &__item{
+            color: v.$white-color;
+            a {
+                color: v.$white-color;
+            }
+        }
+    }
+}

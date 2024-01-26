@@ -1,0 +1,134 @@
+@use "../variable.scss" as v;
+
+.location {
+    background-color: #EAEAEA;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__icon {
+        height: 16px;
+        width: 12px;
+        color:v.$grey-color;
+
+    }
+   
+    &__text {
+        font-weight: 500;
+        margin-left: 10px; 
+        color:v.$grey-color; 
+    }
+
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    padding: 40px 30px;
+    &__txt{
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+.process{
+    background-color: v.$white-color;
+    padding: 20px;
+
+    &__item{
+        height: 72.38px;
+        background-color: v.$light-grey-color ;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        &__txt{
+            font-size: 16px;
+            margin-left: 30px;
+
+        }
+        &__icon{
+            color: #7E7E7E;
+            padding-left: 32px;
+        }
+        &__badge{
+            font-size: 14.18px;
+            width:24px;
+            height: 24px;
+            color: v.$white-color;
+            border-radius: 50px;
+            background-color: v.$primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: -10px;
+        }
+    }
+}
+.restaurants{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    position: relative;
+    
+    &__thumbnail{
+        &__badge{
+            background-color: v.$tertiary-color;
+            color: v.$green-color;
+            font-size: 14px;
+            font-weight: 500;
+            width: 80px;
+            height: 29px;
+            position: absolute;
+            right: 15px;
+            top:15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        &__img{
+            height: 211px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            
+            
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 20px 15px 20px;
+      
+        &__txt__title{
+            font-size: 18PX;
+            font-weight: 700;
+        }
+        &__txt__subtitle{
+            font-size: 17px;
+            font-weight: 300;
+        }
+        &__icon{
+            width: 22px;
+            height: 21px;
+            border: 1px;
+        }
+    }
+}

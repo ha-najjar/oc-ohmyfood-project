@@ -1,0 +1,30 @@
+@use "../variable.scss" as v; // change
+
+.header{
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$white-color; // change
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); // change
+    position: relative;
+    &__logo{
+        width: 162px;
+        height: 44px;
+        
+    }
+
+    &__icon{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        color: v.$black-color;
+        display: flex;
+        align-items: center; 
+        .fa-solid {
+            font-size: 20px;
+        }
+    }
+}

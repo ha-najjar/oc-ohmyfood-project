@@ -1,0 +1,79 @@
+@use "../variable.scss" as v;
+
+.main {
+    &__banner{
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+}
+ 
+.menu{
+    border-radius: 40px 40px 0 0;
+    background-color: v.$light-grey-color;
+    padding: 40px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    top: -53px;
+    position: relative;
+
+    &__title{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 17px 0 0;
+        &__txt{
+            font-size: 28px ;
+            font-weight: 400;
+            font-style: italic;
+            font-family: v.$secondary-font-family;
+
+        }
+        &__icon{
+            margin-top: 10px;
+            height: 22px;
+            width: 21px;
+        }
+
+      
+
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+        &__title{
+            font-weight: 300;
+            text-transform: uppercase;
+            &__underline {
+                height: 3px;
+                width: 40px;
+                background-color: v.$tertiary-color;
+                border: 0;
+                margin-top: 5px;
+            }
+        }
+        &__item{
+            background-color: v.$white-color;
+            padding: 15px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            &__info{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &__price{
+                    font-weight: 700;
+                    font-size: 15.04px;
+                }
+            }
+            
+        }
+    }
+
+}

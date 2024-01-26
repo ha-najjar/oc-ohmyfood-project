@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/* colors */
+/* font-family*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #F6F6F6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 15.04px;
+}
+
+.header {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header__logo {
+  width: 162px;
+  height: 44px;
+}
+.header__icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.header__icon .fa-solid {
+  font-size: 20px;
+}
+
+.button {
+  padding: 15.3px 19px;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.button__txt {
+  color: #ffffff;
+}
+.button.page-button {
+  max-width: 186px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.footer.page-footer {
+  margin-top: -13px;
+}
+.footer__logo {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+.footer__menu {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu__item {
+  color: #ffffff;
+}
+.footer__menu__item a {
+  color: #ffffff;
+}
+
+.location {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.location__icon {
+  height: 16px;
+  width: 12px;
+  color: #353535;
+}
+.location__text {
+  font-weight: 500;
+  margin-left: 10px;
+  color: #353535;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: 40px 30px;
+}
+.intro__txt {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.process {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.process__item {
+  height: 72.38px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.process__item__txt {
+  font-size: 16px;
+  margin-left: 30px;
+}
+.process__item__icon {
+  color: #7E7E7E;
+  padding-left: 32px;
+}
+.process__item__badge {
+  font-size: 14.18px;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -10px;
+}
+
+.restaurants {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+.card__thumbnail__badge {
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__thumbnail__img {
+  height: 211px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 20px 15px 20px;
+}
+.card__content__txt__title {
+  font-size: 18PX;
+  font-weight: 700;
+}
+.card__content__txt__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card__content__icon {
+  width: 22px;
+  height: 21px;
+  border: 1px;
+}
+
+.main__banner {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  background-color: #F6F6F6;
+  padding: 40px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  top: -53px;
+  position: relative;
+}
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 17px 0 0;
+}
+.menu__title__txt {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Shrikhand";
+}
+.menu__title__icon {
+  margin-top: 10px;
+  height: 22px;
+  width: 21px;
+}
+.menu__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.menu__block__title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.menu__block__title__underline {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  border: 0;
+  margin-top: 5px;
+}
+.menu__block__item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu__block__item__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__block__item__info__price {
+  font-weight: 700;
+  font-size: 15.04px;
+}
+
+/*# sourceMappingURL=main.css.map */
