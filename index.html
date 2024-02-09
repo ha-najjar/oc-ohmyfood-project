@@ -27,7 +27,7 @@
         <main class="main">
             <section class="location">
                 <i class="fa-solid fa-location-dot location__icon"></i>
-                <span class="location__text">Paris, Belleville</span>         
+                <input type="text" value="Paris, Belleville" class="location__input"/>         
             </section>
             <section class="intro">
                 <h1 class="section-title">Réservez le menu qui vous convient</h1>
@@ -37,7 +37,9 @@
                 </a>
             </section>
             <section class="process">
-                <h2  class="section-title">Fonctionnement<h2>
+              <div class="container">
+                <h2  class="section-title">Fonctionnement</h2>
+                <div class="process__items">
                 <div class="process__item">
                     <span class="process__item__badge">1</span>
                     <i class="fa-solid fa-mobile-screen-button process__item__icon"></i>
@@ -53,10 +55,13 @@
                     <i class="fa-solid fa-store process__item__icon"></i>
                     <span class="process__item__txt">Dégustez au restaurant</span>
                 </div>
-
+              </div>
+            </div>
             </section>
             <section class="restaurants" id="restaurants">
+              <div class="container">
                 <h2 class="section-title">Restaurants</h2>
+                <div class="restaurants__cards">
                 <a href="./La-palette-du-gout.html">
                   <article class="card">
                     <div class="card__thumbnail">
@@ -70,12 +75,15 @@
                       <div class="card__content__txt">
                         <h3 class="card__content__txt__title">La palette du goût</h3>
                         <p class="card__content__txt__subtitle">Ménilmontant</p>
-                      </div> 
-                      <i class="fa-regular fa-heart card__content__icon"></i>
-                    </div>
+                      </div>
+                        <div class="heart">
+                          <i class="fa-regular fa-heart heart__icon"></i>
+                          <i class="fa-solid fa-heart heart__icon heart__icon--full"></i>
+                        </div>
+                      </div>
                   </article>
                 </a>
-                
+                <a href="./La-note-enchantee.html">
                   <article class="card">
                     <div class="card__thumbnail">
                         <span class="card__thumbnail__badge">nouveau</span>
@@ -89,10 +97,15 @@
                         <h3 class="card__content__txt__title">La note enchantée</h3>
                         <p class="card__content__txt__subtitle">charonne</p>
                       </div> 
-                      <i class="fa-regular fa-heart card__content__icon"></i>
+                      <div class="heart">
+                        <i class="fa-regular fa-heart heart__icon"></i>
+                        <i class="fa-solid fa-heart heart__icon heart__icon--full"></i>
+                      </div>
                     </div>
                   </article>
-                  <article class="card">
+                </a>
+                <a href="./A-la-francaise.html">
+                  <article class="card card--third">
                     <div class="card__thumbnail">
                     <img class="card__thumbnail__img"
                       src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -104,10 +117,15 @@
                         <h3 class="card__content__txt__title">À la française</h3>
                         <p class="card__content__txt__subtitle">Cité Rouge</p>
                       </div> 
-                      <i class="fa-regular fa-heart card__content__icon"></i>
+                      <div class="heart">
+                        <i class="fa-regular fa-heart heart__icon"></i>
+                        <i class="fa-solid fa-heart heart__icon heart__icon--full"></i>
+                      </div>
                     </div>
                   </article>
-                  <article class="card">
+                </a>
+                <a href="./Le-delice-des-sens.html">
+                  <article class="card card--fourth">
                     <div class="card__thumbnail">
                     <img class="card__thumbnail__img"
                       src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -119,10 +137,15 @@
                         <h3 class="card__content__txt__title">Le délice des sens</h3>
                         <p class="card__content__txt__subtitle">Folie-Méricourt</p>
                       </div> 
-                      <i class="fa-regular fa-heart card__content__icon"></i>
+                      <div class="heart">
+                        <i class="fa-regular fa-heart heart__icon"></i>
+                        <i class="fa-solid fa-heart heart__icon heart__icon--full"></i>
+                      </div>
                     </div>
                   </article>
-
+                </a>
+              </div>
+            </div>
             </section>
         </main>
         <footer class="footer">
@@ -138,15 +161,18 @@
             <i class="fa-solid fa-handshake-angle"></i>
              <a href="#">Devenir partenaire </a>
           </li>
-          <li class="footer__menu__item">
+          <li class="footer__menu__item footer__menu__item--third">
              <a href="#">Mentions légales </a> 
           </li>
-          <li class="footer__menu__item">
+          <li class="footer__menu__item footer__menu__item--fourth">
             <a href="mailto:hajer.najar.ing@gmail.com">Contact</a>
           </li>
          </ul> 
-
-
         </footer>
+        <div class="loader-container">
+          <div class="dot"></div>
+          <div class="dot delay-05"></div>
+          <div class="dot delay-1"></div>
+        </div>
     </body>
 </html>

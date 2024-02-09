@@ -3,7 +3,7 @@
     background-color: v.$grey-color;
     padding: 22px 25px;
     &.page-footer {
-        margin-top: -13px;
+        margin-top: -53px;
     }
 
     &__logo {
@@ -13,6 +13,11 @@
         font-family: v.$secondary-font-family, sans-serif;
         font-style: italic;
         margin-bottom: 14px;
+        @media (min-width:768px){
+            margin-bottom: 0;
+            padding-left: 80px;
+            padding-right: 50px;
+        }
     }
     &__menu {
         gap: 7px;
@@ -23,6 +28,28 @@
             a {
                 color: v.$white-color;
             }
+            &--third {
+                @media (min-width:768px){
+                    padding-left: 30px;
+                }
+            }
+            &--fourth {
+                @media (min-width:768px){
+                    padding-left: 14px;
+                }
+            }
         }
+        @media (min-width:768px){
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 7px;
+        }
+    }
+
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 58px 25px 30px 25px;
     }
 }
