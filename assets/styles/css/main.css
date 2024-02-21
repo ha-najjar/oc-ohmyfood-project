@@ -469,7 +469,8 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  animation: menuAdvent 1s 0.2s alternate;
+  visibility: hidden;
+  animation: menuAdvent 1s 0.2s ease-out forwards;
 }
 .menu__block__title {
   font-weight: 300;
@@ -543,9 +544,11 @@ h5 {
 @keyframes menuAdvent {
   0% {
     transform: scale(0);
+    visibility: visible;
   }
   100% {
     transform: scale(1);
+    visibility: visible;
   }
 }
 .delay-6 {
