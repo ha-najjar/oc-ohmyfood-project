@@ -489,6 +489,7 @@ h5 {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .menu__block__item__descrition {
   display: flex;

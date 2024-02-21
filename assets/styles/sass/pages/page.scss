@@ -72,6 +72,7 @@
             border-radius: 20px;
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
             &__descrition {
                 display: flex;
                 flex-direction: column;
