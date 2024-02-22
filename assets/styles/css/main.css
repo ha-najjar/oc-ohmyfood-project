@@ -63,33 +63,36 @@ h5 {
 }
 
 /* Heart icon */
-.heart__icon {
-  font-size: 22px;
-  font-weight: 300;
-}
-.heart__icon--full {
-  opacity: 0;
+.heart {
   position: relative;
-  left: -25px;
-  font-weight: 900;
-  transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
 }
-.heart__icon--full:hover, .heart__icon--full:active {
-  opacity: 1;
+.heart--outline {
+  position: absolute;
+}
+.heart--full {
+  position: absolute;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   color: transparent;
-  animation: 0.3s heart ease-in;
+  transform: scale(0);
+  transition: transform 0.4s;
+}
+.heart:hover {
+  cursor: pointer;
+}
+.heart:hover .heart--full {
+  transform: scale(1);
+}
+.heart:hover .heart--outline {
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  color: transparent;
 }
 
-@keyframes heart {
-  0% {
-    transform: scale(0.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .header {
   height: 63px;
   display: flex;
